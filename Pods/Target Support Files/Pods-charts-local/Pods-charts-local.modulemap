@@ -1,0 +1,6 @@
+framework module Pods_charts_local {
+  umbrella header "Pods-charts-local-umbrella.h"
+
+  export *
+  module * { export * }
+}

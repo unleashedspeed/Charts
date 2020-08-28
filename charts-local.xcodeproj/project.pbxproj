@@ -3,19 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		099CBA3A24F93981001B64B5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099CBA3924F93981001B64B5 /* Constants.swift */; };
+		099CBA3C24F93C92001B64B5 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099CBA3B24F93C92001B64B5 /* UIColor+Extension.swift */; };
+		099CBA4324F94786001B64B5 /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099CBA4224F94786001B64B5 /* ChartData.swift */; };
 		09EBEE0B24F9173C00F1A014 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EBEE0A24F9173C00F1A014 /* AppDelegate.swift */; };
 		09EBEE0D24F9173C00F1A014 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EBEE0C24F9173C00F1A014 /* SceneDelegate.swift */; };
 		09EBEE0F24F9173C00F1A014 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EBEE0E24F9173C00F1A014 /* ViewController.swift */; };
 		09EBEE1224F9173C00F1A014 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09EBEE1024F9173C00F1A014 /* Main.storyboard */; };
 		09EBEE1424F9173F00F1A014 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09EBEE1324F9173F00F1A014 /* Assets.xcassets */; };
 		09EBEE1724F9173F00F1A014 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09EBEE1524F9173F00F1A014 /* LaunchScreen.storyboard */; };
+		09EBEE2324F936BC00F1A014 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EBEE2224F936BC00F1A014 /* ImagePicker.swift */; };
+		3EA3F15855752E6AD791D8ED /* Pods_charts_local.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A186C3E098BE2575158B8A9D /* Pods_charts_local.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0049588AED9995976B90B296 /* Pods-charts-local.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-charts-local.debug.xcconfig"; path = "Target Support Files/Pods-charts-local/Pods-charts-local.debug.xcconfig"; sourceTree = "<group>"; };
+		099CBA3924F93981001B64B5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		099CBA3B24F93C92001B64B5 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		099CBA4224F94786001B64B5 /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
 		09EBEE0724F9173C00F1A014 /* charts-local.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "charts-local.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		09EBEE0A24F9173C00F1A014 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09EBEE0C24F9173C00F1A014 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +33,9 @@
 		09EBEE1324F9173F00F1A014 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09EBEE1624F9173F00F1A014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09EBEE1824F9173F00F1A014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09EBEE2224F936BC00F1A014 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		4B52FCB2BB3F5CBC34B7CD3C /* Pods-charts-local.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-charts-local.release.xcconfig"; path = "Target Support Files/Pods-charts-local/Pods-charts-local.release.xcconfig"; sourceTree = "<group>"; };
+		A186C3E098BE2575158B8A9D /* Pods_charts_local.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_charts_local.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,73 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EA3F15855752E6AD791D8ED /* Pods_charts_local.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		099CBA3D24F9407F001B64B5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				09EBEE1024F9173C00F1A014 /* Main.storyboard */,
+				09EBEE1524F9173F00F1A014 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		099CBA3E24F9408F001B64B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				09EBEE0A24F9173C00F1A014 /* AppDelegate.swift */,
+				09EBEE0C24F9173C00F1A014 /* SceneDelegate.swift */,
+				09EBEE1324F9173F00F1A014 /* Assets.xcassets */,
+				09EBEE1824F9173F00F1A014 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		099CBA3F24F940A6001B64B5 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				09EBEE0E24F9173C00F1A014 /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		099CBA4024F940B6001B64B5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				099CBA3B24F93C92001B64B5 /* UIColor+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		099CBA4124F940BE001B64B5 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				09EBEE2224F936BC00F1A014 /* ImagePicker.swift */,
+				099CBA3924F93981001B64B5 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		099CBA4424F949EC001B64B5 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				099CBA4224F94786001B64B5 /* ChartData.swift */,
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
 		09EBEDFE24F9173C00F1A014 = {
 			isa = PBXGroup;
 			children = (
 				09EBEE0924F9173C00F1A014 /* charts-local */,
 				09EBEE0824F9173C00F1A014 /* Products */,
+				2F41C051932AC0F0F8BA6F09 /* Pods */,
+				29C17E0E4CCCB524602591E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +124,31 @@
 		09EBEE0924F9173C00F1A014 /* charts-local */ = {
 			isa = PBXGroup;
 			children = (
-				09EBEE0A24F9173C00F1A014 /* AppDelegate.swift */,
-				09EBEE0C24F9173C00F1A014 /* SceneDelegate.swift */,
-				09EBEE0E24F9173C00F1A014 /* ViewController.swift */,
-				09EBEE1024F9173C00F1A014 /* Main.storyboard */,
-				09EBEE1324F9173F00F1A014 /* Assets.xcassets */,
-				09EBEE1524F9173F00F1A014 /* LaunchScreen.storyboard */,
-				09EBEE1824F9173F00F1A014 /* Info.plist */,
+				099CBA3D24F9407F001B64B5 /* Storyboards */,
+				099CBA3F24F940A6001B64B5 /* View Controllers */,
+				099CBA4124F940BE001B64B5 /* Utilities */,
+				099CBA4024F940B6001B64B5 /* Extensions */,
+				099CBA3E24F9408F001B64B5 /* Supporting Files */,
+				099CBA4424F949EC001B64B5 /* Data Models */,
 			);
 			path = "charts-local";
+			sourceTree = "<group>";
+		};
+		29C17E0E4CCCB524602591E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A186C3E098BE2575158B8A9D /* Pods_charts_local.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F41C051932AC0F0F8BA6F09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0049588AED9995976B90B296 /* Pods-charts-local.debug.xcconfig */,
+				4B52FCB2BB3F5CBC34B7CD3C /* Pods-charts-local.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +158,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09EBEE1B24F9173F00F1A014 /* Build configuration list for PBXNativeTarget "charts-local" */;
 			buildPhases = (
+				5D0766E0ADAF77409A2D7E4F /* [CP] Check Pods Manifest.lock */,
 				09EBEE0324F9173C00F1A014 /* Sources */,
 				09EBEE0424F9173C00F1A014 /* Frameworks */,
 				09EBEE0524F9173C00F1A014 /* Resources */,
+				21BADAAEBD3071E62D553398 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +219,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		21BADAAEBD3071E62D553398 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-charts-local/Pods-charts-local-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-charts-local/Pods-charts-local-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-charts-local/Pods-charts-local-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D0766E0ADAF77409A2D7E4F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-charts-local-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		09EBEE0324F9173C00F1A014 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				099CBA3A24F93981001B64B5 /* Constants.swift in Sources */,
 				09EBEE0F24F9173C00F1A014 /* ViewController.swift in Sources */,
+				09EBEE2324F936BC00F1A014 /* ImagePicker.swift in Sources */,
+				099CBA3C24F93C92001B64B5 /* UIColor+Extension.swift in Sources */,
+				099CBA4324F94786001B64B5 /* ChartData.swift in Sources */,
 				09EBEE0B24F9173C00F1A014 /* AppDelegate.swift in Sources */,
 				09EBEE0D24F9173C00F1A014 /* SceneDelegate.swift in Sources */,
 			);
@@ -282,11 +414,13 @@
 		};
 		09EBEE1C24F9173F00F1A014 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0049588AED9995976B90B296 /* Pods-charts-local.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y78N79J6Y9;
-				INFOPLIST_FILE = "charts-local/Info.plist";
+				INFOPLIST_FILE = "charts-local/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,17 +428,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "me.gupta.saurabh.charts-local";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
 		09EBEE1D24F9173F00F1A014 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B52FCB2BB3F5CBC34B7CD3C /* Pods-charts-local.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y78N79J6Y9;
-				INFOPLIST_FILE = "charts-local/Info.plist";
+				INFOPLIST_FILE = "charts-local/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +448,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "me.gupta.saurabh.charts-local";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
